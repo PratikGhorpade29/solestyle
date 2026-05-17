@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoleStyle — Walk Beyond Fashion</title>
+  <meta name="description" content="SoleStyle — premium luxury streetwear sneakers. Walk beyond fashion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-text">SOLESTYLE</div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <!-- Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">SOLE<span>STYLE</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#arrivals">New Arrivals</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="slider" id="slider">
+      <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1920&q=80')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=1920&q=80')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1920&q=80')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1920&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">— Luxury Streetwear —</p>
+      <h1 class="hero-title">SOLESTYLE</h1>
+      <p class="hero-subtitle">Walk Beyond Fashion</p>
+      <div class="hero-buttons">
+        <a href="#collection" class="btn btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#arrivals" class="btn btn-ghost">Explore Collection</a>
+      </div>
+    </div>
+    <div class="slider-dots" id="dots"></div>
+    <a href="#collection" class="scroll-indicator" aria-label="Scroll">
+      <span></span>
+    </a>
+  </header>
+
+  <!-- Counters -->
+  <section class="counters reveal">
+    <div class="counter"><h3 data-target="120">0</h3><p>Premium Drops</p></div>
+    <div class="counter"><h3 data-target="48">0</h3><p>Countries</p></div>
+    <div class="counter"><h3 data-target="95000">0</h3><p>Happy Walkers</p></div>
+    <div class="counter"><h3 data-target="12">0</h3><p>Years of Craft</p></div>
+  </section>
+
+  <!-- Featured Collection -->
+  <section class="section" id="collection">
+    <div class="section-head reveal">
+      <p class="eyebrow">Featured</p>
+      <h2>The Collection</h2>
+      <p class="muted">Hand-picked silhouettes engineered for the streets and the spotlight.</p>
+    </div>
+    <div class="products">
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=800&q=80" alt="White Sneakers" /></div>
+        <div class="product-body"><h3>White Sneakers</h3><p class="price">$249</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80" alt="Streetwear Shoes" /></div>
+        <div class="product-body"><h3>Streetwear Shoes</h3><p class="price">$289</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80&sat=-100" alt="Running Shoes" /></div>
+        <div class="product-body"><h3>Running Shoes</h3><p class="price">$219</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=800&q=80" alt="High Tops" /></div>
+        <div class="product-body"><h3>High Tops</h3><p class="price">$329</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&q=80" alt="Casual Luxury" /></div>
+        <div class="product-body"><h3>Casual Luxury</h3><p class="price">$359</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+      <article class="product reveal">
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&q=80" alt="Limited Edition" /></div>
+        <div class="product-body"><h3>Limited Edition</h3><p class="price">$499</p><button class="btn btn-primary btn-sm">Buy Now</button></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section dark" id="arrivals">
+    <div class="section-head reveal">
+      <p class="eyebrow">Just Dropped</p>
+      <h2>New Arrivals</h2>
+    </div>
+    <div class="arrivals-track-wrap">
+      <div class="arrivals-track" id="arrivalsTrack">
+        <div class="arrival"><img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=900&q=80" alt=""><h4>Phantom 01</h4><span>$279</span></div>
+        <div class="arrival"><img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=900&q=80" alt=""><h4>Ivory Edge</h4><span>$309</span></div>
+        <div class="arrival"><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=900&q=80" alt=""><h4>Noir Runner</h4><span>$259</span></div>
+        <div class="arrival"><img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=900&q=80" alt=""><h4>Chrome Mid</h4><span>$389</span></div>
+        <div class="arrival"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=900&q=80" alt=""><h4>Atelier Lo</h4><span>$349</span></div>
+      </div>
+      <button class="track-btn left" id="trackLeft"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="track-btn right" id="trackRight"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Trending Gallery -->
+  <section class="section" id="trending">
+    <div class="section-head reveal">
+      <p class="eyebrow">On The Streets</p>
+      <h2>Trending Now</h2>
+    </div>
+    <div class="gallery">
+      <div class="g g1 reveal" style="background-image:url('https://images.unsplash.com/photo-1556906781-9a412961c28c?w=900&q=80')"></div>
+      <div class="g g2 reveal" style="background-image:url('https://images.unsplash.com/photo-1539185441755-769473a23570?w=900&q=80')"></div>
+      <div class="g g3 reveal" style="background-image:url('https://images.unsplash.com/photo-1521296797187-726205347ca9?w=900&q=80')"></div>
+      <div class="g g4 reveal" style="background-image:url('https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=900&q=80')"></div>
+      <div class="g g5 reveal" style="background-image:url('https://images.unsplash.com/photo-1465453869711-7e174808ace9?w=900&q=80')"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="about-grid">
+      <div class="about-images reveal">
+        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&q=80" alt="" class="ai1" />
+        <img src="https://images.unsplash.com/photo-1517260911205-8d8c19a8a3f6?w=800&q=80" alt="" class="ai2" />
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>Craft, Culture, Concrete.</h2>
+        <p>SoleStyle was born at the intersection of luxury and the street. Every pair is engineered in limited runs, designed in our atelier and finished by hand — a quiet rebellion against the disposable.</p>
+        <p>From midnight studios to morning runways, we build silhouettes that move with you, not against you. This isn't fashion. It's footprint.</p>
+        <a href="#collection" class="btn btn-ghost">Discover the Craft</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section dark" id="reviews">
+    <div class="section-head reveal">
+      <p class="eyebrow">Voices</p>
+      <h2>From The Walkers</h2>
+    </div>
+    <div class="reviews">
+      <div class="review glass reveal">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Cleanest silhouette I've owned. Feels like architecture for the feet."</p>
+        <h5>— Amara K.</h5>
+      </div>
+      <div class="review glass reveal">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Premium feel, zero noise. SoleStyle gets minimalism right."</p>
+        <h5>— Daniel R.</h5>
+      </div>
+      <div class="review glass reveal">
+        <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+        <p>"The limited drops sell out fast — and once you wear them you know why."</p>
+        <h5>— Sora M.</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section newsletter">
+    <div class="news-card glass reveal">
+      <h2>Join the Inner Circle</h2>
+      <p class="muted">Early access to drops, ateliers, and silent releases.</p>
+      <form id="newsForm" class="news-form">
+        <input type="email" placeholder="your@email.com" required />
+        <button class="btn btn-primary" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section-head reveal">
+      <p class="eyebrow">Reach Out</p>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+      <div class="contact-side reveal">
+        <h3>Visit the Atelier</h3>
+        <p class="muted">14 Mercer Street, NY · Open by appointment</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="logo">SOLE<span>STYLE</span></a>
+        <p class="muted">Walk beyond fashion.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul><li><a href="#collection">Collection</a></li><li><a href="#arrivals">New Arrivals</a></li><li><a href="#trending">Trending</a></li><li><a href="#about">About</a></li></ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul><li><a href="#contact">Contact</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <div class="socials sm">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> SoleStyle. All rights reserved.</div>
+  </footer>
+
+  <!-- Floating action + scroll top -->
+  <button class="fab" id="fab" aria-label="Shop"><i class="fa-solid fa-bag-shopping"></i></button>
+  <button class="scroll-top" id="scrollTop" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
